@@ -7,7 +7,7 @@
 
     <script type="text/javascript">
         Rally.onReady(function () {
-                Ext.define("CustomApp",{value:0,extend:"Rally.app.App",componentCls:"app",launch:function(){},adder:function(a,b){return console.log(a+b),a+b},myTargetFunction:function(){var value=5;return value}});
+                Ext.define("CustomApp",{myApp:this,value:0,extend:"Rally.app.App",componentCls:"app",launch:function(){this.calculator(3,3,"*"),this.calculator(27,3,"/"),this.calculator(6,3,"+"),this.calculator(12,3,"-")},calculator:function(a,b,c){var calculatedValue=a+b;switch(c){case"*":calculatedValue=a*b;break;case"/":calculatedValue=a/b;break;case"+":calculatedValue=a+b;break;case"-":calculatedValue=a-b}return calculatedValue}});
 
             Rally.launchApp('CustomApp', {
                 name:"DvCookra_1",
