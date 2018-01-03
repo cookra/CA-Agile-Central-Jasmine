@@ -7,12 +7,34 @@ describe('CustomApp', function () {
         expect(app.getEl()).toBeDefined();
     });
     describe('Calculator', function () {
-        it("Run a calculation", function () {
-            var a = 4;
-            var b = 2;
-            var c = "*";
-            var method = app.calculator(a, b, c);
-            expect(method).toEqual(8);
+        var a, b;
+        beforeEach(function () {
+            a = 4;
+            b = 2;
+        });
+        it("Run a + calculation", function () {
+            var operator = "+";
+            var result = 6;
+            var method = app.calculator(a, b, operator);
+            expect(method).toEqual(result);
+        });
+        it("Run a - calculation", function () {
+            var operator = "-";
+            var result = 2;
+            var method = app.calculator(a, b, operator);
+            expect(method).toEqual(result);
+        });
+        it("Run a * calculation", function () {
+            var operator = "*";
+            var result = 8;
+            var method = app.calculator(a, b, operator);
+            expect(method).toEqual(result);
+        });
+        it("Run a / calculation", function () {
+            var operator = "/";
+            var result = 2;
+            var method = app.calculator(a, b, operator);
+            expect(method).toEqual(result);
         });
     });
 });
