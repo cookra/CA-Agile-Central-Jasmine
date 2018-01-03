@@ -2,10 +2,14 @@
 
 ## Overview
 
+Nothing amazing here, getting to know Jasmine..
 
 ## License
 
-Cookra_Jasmine_Test is released under the MIT license.  See the file [LICENSE](./LICENSE) for the full text.
+Cookra Jasmine Test is released under the MIT license.  See the file [LICENSE](./LICENSE) for the full text.
+
+Cookra® Limited © 2018 [Visit Cookra Limited Online](https://www.cookra.co.uk)
+The Cookra® Limited Logo is a registered trademark of Cookra Limited.
 
 ##Documentation for SDK
 
