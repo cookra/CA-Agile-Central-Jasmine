@@ -1,15 +1,11 @@
-DvCookra_1
-=========================
-
-
-[![Build Status](https://travis-ci.org/cookra/CA-Agile-Central-Dygraph.png?branch=master)](https://travis-ci.org/cookra/CA-Agile-Central-Dygraph)
+[![Build Status](https://travis-ci.org/cookra/CA-Agile-Central-Jasmine.png?branch=master)](https://travis-ci.org/cookra/CA-Agile-Central-Jasmine)
 
 ## Overview
 
 
 ## License
 
-DvCookra_1 is released under the MIT license.  See the file [LICENSE](./LICENSE) for the full text.
+Cookra_Jasmine_Test is released under the MIT license.  See the file [LICENSE](./LICENSE) for the full text.
 
 ##Documentation for SDK
 
