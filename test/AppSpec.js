@@ -2,18 +2,17 @@ describe('CustomApp', function () {
     var app;
     beforeEach(function () {
         app = Rally.test.Harness.launchApp('CustomApp');
-        spyOn(app, 'adder');
     });
-
     it('should render the app', function () {
         expect(app.getEl()).toBeDefined();
     });
-    it('My Function Test', function () {
-        expect(app.myTargetFunction()).toEqual(5);
-    });
-    it('Addition', function () {
-        app.adder(3, 5);
-        expect(app.adder).toHaveBeenCalled();
-        expect(app.adder).toHaveBeenCalledWith(3, 5);
+    describe('Calculator', function () {
+        it("Run a calculation", function () {
+            var a = 4;
+            var b = 2;
+            var c = "*";
+            var method = app.calculator(a, b, c);
+            expect(method).toEqual(8);
+        });
     });
 });

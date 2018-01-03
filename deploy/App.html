@@ -7,7 +7,7 @@
 
     <script type="text/javascript">
         Rally.onReady(function () {
-                Ext.define("CustomApp",{value:0,extend:"Rally.app.App",componentCls:"app",launch:function(){},adder:function(a,b){return console.log(a+b),a+b},myTargetFunction:function(v){var value=5;return value}});
+                Ext.define("CustomApp",{value:0,extend:"Rally.app.App",componentCls:"app",launch:function(){},adder:function(a,b){return console.log(a+b),a+b},myTargetFunction:function(){var value=5;return value}});
 
             Rally.launchApp('CustomApp', {
                 name:"DvCookra_1",
