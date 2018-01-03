@@ -13,7 +13,6 @@ describe('CustomApp', function () {
     });
     it('Addition', function () {
         app.adder(3, 5);
-        expect(app.adder).toEqual(8);
         expect(app.adder).toHaveBeenCalled();
         expect(app.adder).toHaveBeenCalledWith(3, 5);
     });
